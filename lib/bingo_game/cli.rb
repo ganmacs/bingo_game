@@ -26,7 +26,7 @@ module BingoGame
         loop { random_number }
       }
 
-      gets.chomp                # stop roulette by any key
+      gets                # for stopping roulette
       Thread.kill(t)
       printf "\e[2A"
     end
