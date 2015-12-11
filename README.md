@@ -1,5 +1,7 @@
 # BingoGame
 
+![bingo](image/saikou.gif)
+
 
 ## Installation
 
