@@ -15,7 +15,9 @@ module BingoGame
         puts 'Success'
       else
         shutto_suruyatu
-        flipper.call
+        v = flipper.call
+        puts v
+        exec("say #{v}")
       end
     end
 
@@ -29,6 +31,8 @@ module BingoGame
       gets                # for stopping roulette
       Thread.kill(t)
       printf "\e[2A"
+      puts '    '
+      printf "\e[1A"
     end
 
     def random_number

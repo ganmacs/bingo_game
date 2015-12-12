@@ -11,7 +11,7 @@ module BingoGame
         n = loaded_seed.first
         update_seed
         store_seed(n)
-        puts n
+        n
       end
     end
 
